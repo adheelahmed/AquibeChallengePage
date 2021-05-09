@@ -1,0 +1,961 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@500&display=swap');
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.parent{
+
+    position: relative;
+
+    text-align: center;
+    
+
+}
+
+
+
+
+.list{
+    position: relative;
+    display: flex;
+   left: 50%;
+
+   transform: translate(-50%);
+   justify-content: space-between;
+   width: 35%;
+   font-family: 'Roboto', sans-serif;
+}
+
+.list a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: .3s;
+}
+.list a:hover{
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    font-size: 25px;
+}
+
+.name{position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    left: -20rem;
+    transition: 1s ease;
+}
+.name:hover{
+    color: rgb(255, 196, 0) ;
+   
+}
+
+.list li{
+    list-style: none;
+}
+
+.name-plate{
+    background-color: rgb(255, 255, 255);
+    height: 55rem;
+      
+}
+
+
+
+.photo{
+    position: absolute;
+    width: 310px;
+    border-radius: 50%;
+    left: 30rem;
+    top: 10rem;
+
+}
+
+.name-holder{
+    position: absolute;
+    top: 10rem;
+    left: 52rem;
+    text-align: left;
+    font-size: 25px;
+
+
+}
+
+
+
+.para1{position: relative;
+    font-size: 17px;
+    top: 1rem;
+    font-weight: 600;
+}
+
+
+.name-holder2{
+    position: absolute;
+    top: 35rem;
+    left: 50%;
+    transform: translate(-50%);
+    
+
+}
+
+
+.button{ position: absolute;
+    display: flex;
+    left: 52rem;
+    top: 26rem;
+    width: 20rem;
+    justify-content: space-around;
+   
+
+
+}
+
+
+.parahead{
+    font-weight: 900;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.parab1{
+    font-size: 17px;
+    width: 80%;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 1px;
+    left: 50%;
+    transform: translate(-50%);
+    color: darkgray;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.parab2{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+
+
+
+.btn-1 a{
+   
+    width: 40rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    background-color: rgb(228, 228, 228);
+    transition: color .3s ease;
+}
+
+.btn-2 a{
+   
+    width: 40rem;
+  
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(78, 78, 78);
+
+    font-family: 'Roboto', sans-serif;
+    transition: background-color .3s ease;
+}
+.btn-2 a:hover{
+
+    background-color: rgb(255, 196, 0);
+
+}
+.btn-1 a:hover{
+
+   color: rgb(255, 196, 0);
+
+}
+
+.moving-text{
+    display: inline-block;
+}
+
+.moving-text span{
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
+    font-size: 35px;
+   
+    color: rgb(255, 196, 0);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    
+    animation: animate 6s linear infinite;
+    opacity: 0;
+}
+
+
+
+
+@keyframes animate{
+
+0%{
+    opacity: 0;
+    transform: translateY(10px);
+}
+2%{
+    opacity: 1;
+transform: translateY(0px);
+}
+18%{
+    opacity: 1;
+    transform: translateY(0px);
+}
+20%{
+    opacity: 0;
+    transform: translateY(10px);
+}
+100%{
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+}
+
+
+.moving-text span:nth-child(1){
+    animation-delay: 0s;
+    
+}
+.moving-text span:nth-child(2){
+    animation-delay: 2s;
+    
+}
+.moving-text span:nth-child(3){
+    animation-delay: 4s;
+    
+}
+
+
+.text3{
+    left: 50rem;
+    
+}
+
+
+.menu-toggle a img{position: relative;
+    width: 20px;
+    height: 20px;
+    display: none;
+
+}
+.slider {
+    position: relative;
+    width: 49%;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+}
+.images {
+    display: flex;
+    width: 100%;
+   
+}
+.images img {
+    height: 600px;
+   width: 100%;
+    transition: all 0.15s ease;
+    animation-name: anmate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite ;
+    
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid rgb(0, 0, 0) 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {
+    background: rgb(255, 196, 0);}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+
+}
+
+
+@keyframes anmate{
+
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+    50%{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+    }
+
+.foot{
+    background-color: black;
+    height: 50rem;
+
+}
+
+
+.bar{
+    position: relative;
+    background-color: rgb(255, 196, 0);
+    border-radius: 20px;
+    padding: 18px 10px;
+    display: flex;
+    width: 60%;
+    left: 50%;
+    top: 5.5rem;
+    transform: translate(-50%);
+}
+
+.bar h1{
+    position: relative;
+    font-size: 25px;
+    left: 6rem;
+    top: .8rem;
+
+}
+.bar h2{
+    position: relative;
+    left: 17rem;
+
+}
+.bar div a{
+    position: relative;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 20px;
+    left: 26rem;
+    top: 2rem;
+    color: black;
+    
+}
+.bar div a:hover{
+    background-color: black;
+    color: rgb(255, 196, 0);
+ 
+    
+}
+
+
+.foot-text{
+    position: relative;
+    color: #fff;
+    top: 10rem;
+}
+.foot-text h4 div{
+    position: relative;
+    color: rgb(153, 153, 153);
+ 
+}
+
+.foot-title{position: relative;
+    top: 10rem;
+    font-size: 26px;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.conv{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    border: 2px solid rgb(255, 196, 0);
+    padding: 19px 42px;
+    border-radius: 40px;
+    top: 2rem;
+}
+.conv:hover{
+  color: black;
+  background-color: rgb(255, 196, 0);
+
+}
+
+.foot-title a{
+    position: relative;
+    top: 0;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.icon a img{ position: relative;
+    background-color: rgb(255, 196, 0);
+  width: 29px;
+  bottom: -3rem;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.icon h4{
+    color: white;
+    bottom: -2rem;
+    position: relative;
+}
+
+
+
+
+@media screen and (max-width:1850px) {
+.bar h2{
+left: 15rem;
+}
+.bar div a{
+    left: 23rem;
+}
+    
+}
+@media screen and (max-width:1724px) {
+.bar h2{
+left: 11rem;
+}
+.bar div a{
+    left: 21rem;
+}
+.name-holder{
+    width: 80%;
+}
+
+.name-holder2{
+    width: 100%;
+}
+    
+}
+@media screen and (max-width:1648px) {
+.bar h2{
+left: 11rem;
+}
+.bar div a{
+    left: 18rem;
+}
+    
+}
+@media screen and (max-width:1593px) {
+.bar h2{
+left: 11rem;
+}
+.bar div a{
+    left: 15rem;
+}
+    
+}
+@media screen and (max-width:1500px) {
+
+ 
+    .para1{
+        font-size: 13px;
+    }
+
+    .photo{
+        left: 20rem;
+    }
+
+    .name-holder{
+        left: 41rem;
+    }
+
+}
+@media screen and (max-width:1500px) {
+
+
+
+.bar div a{
+    font-size: 14px;
+    left: 20rem;
+    top: 25px;
+
+}
+.bar h1{
+    top: 0px;
+}
+
+.bar h2{
+    font-size: 16px;
+}
+
+}
+@media screen and (max-width:1400px) {
+
+
+
+.bar div a{
+left: 17rem;
+ 
+
+}
+
+.img-slider img{
+    height: 400px;
+}
+.dots label{
+    width: 10px;
+    height: 10px;
+}
+
+
+
+}
+@media screen and (max-width:1300px) {
+
+
+
+.bar div a{
+
+    left: 15rem;
+
+
+}
+
+.button{
+    left: 40rem;
+    top: 28rem;
+}
+
+
+
+
+}
+@media screen and (max-width:1260px) {
+
+
+
+.bar div a{
+
+    left: 12rem;
+
+
+}
+
+.bar h2{
+
+    left: 8rem;
+
+
+}
+.bar h1{
+
+    left: 4rem;
+
+
+}
+
+
+.button{
+    left: 40rem;
+}
+
+
+
+
+}
+
+@media screen and (max-width:1185px) {
+
+
+    .photo{
+        left: 35%;
+        transform: translate(-50%);
+        width: 200px;
+    }
+    .name-holder{
+        left: 60rem;
+        transform: translate(-50%);
+    }
+
+    .button{
+        top: 27rem;
+        left: 60% ;
+        transform: translate(-50%);
+        font-size: 13px;
+    }
+
+    .list a{
+        font-size: 16px;
+       
+    }
+    .list{
+        width: 36%;
+    }
+    .name{
+        left: -15rem;
+    }
+    .bar div a{
+        top: 12px;
+        font-size: 13px;
+        position: absolute;
+        left: 80%;
+
+        
+    }
+    .bar h1{
+        position: absolute;
+        font-size: 13px;
+        top: 2rem;
+       
+        
+    }
+    .bar h2{
+        left: 12rem;
+        font-size: 13.5px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+   
+    .para1{
+        font-size: 10px;
+    }
+
+    .moving-text span{
+        font-size: 30px;
+        top: 6rem;
+    }
+    .name-holder{
+        font-size: 23px;
+    }
+    .img-slider img{
+        height: 300px;
+    }
+    .parahead{
+        font-size: 18px;
+    }
+
+
+ 
+
+}
+
+
+@media  screen and (max-width:1032px){
+    .button{
+        left: 62%;
+        top: 24rem;
+    }
+
+    .name-plate{
+        height: 47rem;
+    }
+    .name-holder2{
+       top: 29rem;
+    }
+    .parahead{
+        font-size: 15px;
+
+    }
+
+    .list {
+        width: 50%;
+    }
+
+    .name{
+        font-size: 15px;
+        left: -10rem;
+    }
+
+    .list a:hover{
+        font-size: 20px;
+
+    }
+
+
+    .name-plate h1{
+        font-size: 2rem;
+    }
+
+    .para1{
+        top: -.5rem;
+    }
+
+    .moving-text span{
+        font-size: 20px;
+        top: 4rem;
+    }
+
+    .photo{
+        left: 15rem;
+    }
+    .name-holder{
+        left: 48rem;
+        top: 11rem;
+}
+
+.button{
+    left: 32rem;
+}
+
+.img-slider img{
+    height: 200px;
+}
+
+
+.foot{
+    height: 35rem;
+}
+
+
+.foot-title{
+    top: 3rem;
+    font-size: 1rem;
+}
+.conv{
+    font-size: 10px;
+    padding: 10px 22px;
+}
+.bar div a{
+    top: 1.4rem;
+    left: 29rem;
+}
+
+
+
+    
+}
+    
+@media screen and (max-width:972px) {
+    .name-holder{
+        left: 46rem;
+    }
+
+    .button{
+        top: 24rem;
+    }
+
+    .bar div a{
+        left: 27rem;
+    }
+    
+}
+@media screen and (max-width:945px) {
+    .name-holder{
+        left: 45rem;
+    }
+
+    .button{
+        top: 23rem;
+        left: 31rem;
+    }
+
+    .bar div a{
+        left: 27rem;
+    }
+
+
+
+  
+    
+}
+@media screen and (max-width:905px) {
+    .name-holder{
+        left: 44rem;
+    }
+
+    .button{
+        top: 24rem;
+        left: 31rem;
+    }
+
+    .bar div a{
+        left: 25rem;
+    }
+
+
+
+  
+    
+}
+@media screen and (max-width:855px) {
+    .name-holder{
+        left: 43rem;
+    }
+
+    .para1{
+        font-size: 9px;
+    }
+
+    .button{
+        top: 24rem;
+        left: 31rem;
+    }
+
+    .bar div a{
+        left: 24rem;
+    }
+
+
+
+  
+    
+}
+@media screen and (max-width:805px) {
+    .name-holder{
+        top: 10rem;
+        left: 36rem;
+    }
+
+    .button{
+        top: 23rem;
+        left: 24rem;
+        width: 35%;
+        font-size: 10px;  
+      }
+
+    .bar div a{
+        left: 21rem;
+        font-size: 6px;
+        letter-spacing: 1px;
+    }
+    .bar h1{
+        top: 1.5rem;
+        left: 2rem;
+      
+    }
+
+    .bar{
+        top: 3.5rem;
+    }
+
+
+    .bar h2{
+ font-size: 10px;
+    }
+
+    .photo{
+        width: 140px;
+        left: 12rem;
+    }
+
+    .img-slider img{
+        height: 180px;
+    }
+
+    .parahead{
+        font-size: 4px;
+    }
+
+
+
+
+
+  
+    
+}
+@media screen and (max-width:755px) {
+    .name-holder{
+        left: 36rem;
+    }
+
+    .button{
+        top: 22rem;
+        left: 25rem;
+        width: 36%;
+    }
+
+
+    .menu-toggle a img{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 1rem;
+    }
+
+  
+
+    .list li a{
+        display: none;
+    }
+
+
+
+
+  
+    
+}
+@media screen and (max-width:707px) {
+    .name-holder{
+        left: 34rem;
+    }
+
+
+
+    .bar div a{
+        left: 19rem;
+    }
+    
+
+    .button{
+        top: 22rem;
+        left: 24rem;
+        width: 36%;
+    }
+
+  
+    
+}
+@media screen and (max-width:655px) {
+    .name-holder{
+        left: 32rem;
+    }
+
+    .button{
+        top: 24rem;
+        left: 31rem;
+    }
+
+    .bar div a{
+        left: 25rem;
+    }
+
+
+
+  
+    
+}
